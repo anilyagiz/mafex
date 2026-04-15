@@ -9,7 +9,7 @@ Paper: "Beyond the Token: Correcting the Tokenization Bias in XAI via
 Author: Muhammet Anıl Yağız
 """
 
-__version__ = "0.1.0"
+__version__ = "0.1.1"
 __author__ = "Muhammet Anıl Yağız"
 
 # Core morphology - always available

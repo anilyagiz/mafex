@@ -107,15 +107,6 @@ mafex/
 └── requirements.txt       # Dependencies
 ```
 
-## Supported Models
-
-| Model | Type | Status |
-|-------|------|--------|
-| BERTurk | Encoder | ✅ Tested |
-| YTÜ-Cosmos | Decoder | ⚠️ Pending |
-| Kumru | Decoder | ⚠️ Pending |
-| Aya-23 | Decoder | ⚠️ Pending |
-
 ## Evaluation Metrics
 
 MAFEX is evaluated using ERASER metrics:
@@ -135,11 +126,23 @@ Expected results:
 ## Citation
 
 ```bibtex
-@article{yagiz2024mafex,
-  title={Beyond the Token: Correcting the Tokenization Bias in XAI via Morphologically-Aligned Projection},
-  author={Yağız, Muhammet Anıl},
-  journal={arXiv preprint},
-  year={2024}
+@inproceedings{yagiz-horasan-2026-beyond,
+    title = "Beyond the Token: Correcting the Tokenization Bias in {XAI} via Morphologically-Aligned Projection",
+    author = "Yagiz, Muhammet Anil  and
+      Horasan, Fahrettin",
+    editor = {Oflazer, Kemal  and
+      K{\"o}ksal, Abdullatif  and
+      Varol, Onur},
+    booktitle = "Proceedings of the Second Workshop Natural Language Processing for {T}urkic Languages ({SIGTURK} 2026)",
+    month = mar,
+    year = "2026",
+    address = "Rabat, Morocco",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.sigturk-1.19/",
+    doi = "10.18653/v1/2026.sigturk-1.19",
+    pages = "228--235",
+    ISBN = "979-8-89176-370-8",
+    abstract = "Current interpretability methods for Large Language Models (LLMs) operate on a fundamental yet flawed assumption: that subword tokens represent independent semantic units. We prove that this assumption creates a fidelity bottleneck in Morphologically Rich Languages (MRLs), where semantic meaning is densely encoded in sub-token morphemes. We term this phenomenon the Tokenization-Morphology Misalignment (TMM). To resolve TMM, we introduce MAFEX (Morpheme-Aligned Faithful Explanations), a theoretically grounded framework that redefines feature attribution as a linear projection from the computational (token) basis to the linguistic (morpheme) basis. We evaluate our method on a diverse suite of Turkish LLMs, including BERTurk, BERTurk-Sentiment, Cosmos-BERT, and Kumru-2B. On our embedded benchmark (N=20), MAFEX achieves an average F1@1 of 91.25{\\%} compared to 13.75{\\%} for standard token-level baselines (IG, SHAP, DeepLIFT), representing a +77.5{\\%} absolute improvement, establishing it as the new standard for faithful multilingual interpretability."
 }
 ```
 
