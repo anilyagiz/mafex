@@ -1,0 +1,48 @@
+# MAFEX Configuration
+
+# Paths
+paths:
+  data_dir: "./benchmark/data"
+  results_dir: "./results"
+  cache_dir: "./cache"
+
+# MAFEX Hyperparameters
+mafex:
+  lambda_causal: 0.7  # Trade-off between gradient and causal (Eq. 5)
+  ig_steps: 50        # Integrated Gradients interpolation steps
+  baseline_token: "[PAD]"  # Token used for ablation
+
+# Models
+models:
+  berturk:
+    name: "dbmdz/bert-base-turkish-cased"
+    type: "encoder"
+    max_length: 512
+    
+  cosmos:
+    name: "ytu-ce-cosmos/turkish-gpt2-large"  # Placeholder - update with actual
+    type: "decoder"
+    max_length: 1024
+    
+  kumru:
+    name: "Kumru/kumru-7b-instruct"  # Placeholder - update with actual  
+    type: "decoder"
+    max_length: 2048
+    quantize: true
+    
+  aya:
+    name: "CohereForAI/aya-23-8B"
+    type: "decoder"
+    max_length: 2048
+    quantize: true
+
+# Evaluation
+evaluation:
+  top_k_ratios: [0.1, 0.2, 0.3]  # For comprehensiveness/sufficiency
+  n_samples: 850
+  random_seed: 42
+
+# Morphology
+morphology:
+  analyzer: "zemberek"  # or "custom"
+  cache_analyses: true

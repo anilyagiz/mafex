@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025-12-31T13:44:24.561199",
+  "model": "cosmos-bert",
+  "model_path": "ytu-ce-cosmos/turkish-base-bert-uncased",
+  "n_samples": 20,
+  "config": {
+    "lambda_causal": 0.7,
+    "ig_steps": 30,
+    "n_runs": 1
+  },
+  "methods": {
+    "Token-IG": {
+      "name": "Token-IG",
+      "n_samples": 20,
+      "comp_mean": -0.031095385551452637,
+      "comp_std": 0.0,
+      "suff_mean": 0.0859684944152832,
+      "suff_std": 0.0,
+      "faith_corr_mean": 0.5433012701892219,
+      "faith_corr_std": 0.49226388229361095,
+      "precision_at_1": 0.0,
+      "precision_at_3": 0.0,
+      "recall_at_1": 0.0,
+      "recall_at_3": 0.0,
+      "f1_at_1": 0.0,
+      "f1_at_3": 0.0,
+      "avg_compression": 2.15,
+      "avg_density": 1.6,
+      "avg_entropy": 1.0879061222076416,
+      "avg_top_concentration": 0.37529313564300537
+    },
+    "Random": {
+      "name": "Random",
+      "n_samples": 20,
+      "comp_mean": 0.015985187888145447,
+      "comp_std": 0.01767229014277069,
+      "suff_mean": 0.006604140996932984,
+      "suff_std": 0.035453584479646166,
+      "faith_corr_mean": 0.0,
+      "faith_corr_std": 0.0,
+      "precision_at_1": 55.0,
+      "precision_at_3": 33.333333333333336,
+      "recall_at_1": 55.0,
+      "recall_at_3": 100.0,
+      "f1_at_1": 55.0,
+      "f1_at_3": 50.0,
+      "avg_compression": 2.15,
+      "avg_density": 1.6,
+      "avg_entropy": 0.39685378342500516,
+      "avg_top_concentration": 0.7520623796991602
+    },
+    "MAFEX": {
+      "name": "MAFEX",
+      "n_samples": 20,
+      "comp_mean": 0.035522639751434326,
+      "comp_std": 0.0,
+      "suff_mean": 0.04579955339431763,
+      "suff_std": 0.0,
+      "faith_corr_mean": 0.04206304961780412,
+      "faith_corr_std": 0.18334858254114525,
+      "precision_at_1": 95.0,
+      "precision_at_3": 33.333333333333336,
+      "recall_at_1": 95.0,
+      "recall_at_3": 100.0,
+      "f1_at_1": 95.0,
+      "f1_at_3": 50.0,
+      "avg_compression": 2.15,
+      "avg_density": 1.6,
+      "avg_entropy": 0.27795046986545285,
+      "avg_top_concentration": 0.8912362872146842
+    }
+  }
+}

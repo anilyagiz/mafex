@@ -1,0 +1,73 @@
+{
+  "timestamp": "2025-12-31T13:43:47.505118",
+  "model": "berturk",
+  "model_path": "dbmdz/bert-base-turkish-cased",
+  "n_samples": 20,
+  "config": {
+    "lambda_causal": 0.7,
+    "ig_steps": 30,
+    "n_runs": 1
+  },
+  "methods": {
+    "Token-IG": {
+      "name": "Token-IG",
+      "n_samples": 20,
+      "comp_mean": 0.08868705928325653,
+      "comp_std": 0.08094790447978029,
+      "suff_mean": 0.0339194655418396,
+      "suff_std": 0.05191274889911287,
+      "faith_corr_mean": 0.5433012701892219,
+      "faith_corr_std": 0.49226388229361095,
+      "precision_at_1": 20.0,
+      "precision_at_3": 26.666666666666664,
+      "recall_at_1": 20.0,
+      "recall_at_3": 80.0,
+      "f1_at_1": 20.0,
+      "f1_at_3": 40.0,
+      "avg_compression": 2.9166666666666665,
+      "avg_density": 1.6,
+      "avg_entropy": 0.9733638763427734,
+      "avg_top_concentration": 0.5979126691818237
+    },
+    "Random": {
+      "name": "Random",
+      "n_samples": 20,
+      "comp_mean": 0.014134770631790161,
+      "comp_std": 0.027649082685227144,
+      "suff_mean": 0.106640625,
+      "suff_std": 0.0560485440321328,
+      "faith_corr_mean": 0.0,
+      "faith_corr_std": 0.0,
+      "precision_at_1": 55.0,
+      "precision_at_3": 33.333333333333336,
+      "recall_at_1": 55.0,
+      "recall_at_3": 100.0,
+      "f1_at_1": 55.0,
+      "f1_at_3": 50.0,
+      "avg_compression": 2.9166666666666665,
+      "avg_density": 1.6,
+      "avg_entropy": 0.39685378342500516,
+      "avg_top_concentration": 0.7520623796991602
+    },
+    "MAFEX": {
+      "name": "MAFEX",
+      "n_samples": 20,
+      "comp_mean": 0.007076522707939148,
+      "comp_std": 0.04741511027406413,
+      "suff_mean": 0.08283145427703857,
+      "suff_std": 0.06026624614650044,
+      "faith_corr_mean": 0.04206304961780412,
+      "faith_corr_std": 0.18334858254114525,
+      "precision_at_1": 90.0,
+      "precision_at_3": 33.333333333333336,
+      "recall_at_1": 90.0,
+      "recall_at_3": 100.0,
+      "f1_at_1": 90.0,
+      "f1_at_3": 50.0,
+      "avg_compression": 2.9166666666666665,
+      "avg_density": 1.6,
+      "avg_entropy": 0.2935366436325053,
+      "avg_top_concentration": 0.8575662547324976
+    }
+  }
+}
